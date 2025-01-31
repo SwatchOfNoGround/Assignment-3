@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pamper Your Pet</title>
+    <!-- ADLaM Display font CDN  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&display=swap" rel="stylesheet">
+    <!-- Sora font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .font-adlam {
+            font-family: "ADLaM Display", serif;
+        }
+
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+    </style>
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        primary: '#FFF9F4',
+                        secondary: '#FFDC26',
+                        'card-bg': '#F9DF8A',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- fontAwesome cdn -->
+    <script src="https://kit.fontawesome.com/c3164dc160.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header class="bg-primary mb-8 md:mb-20 font-sora">
+        <!-- Navbar -->
+        <nav class="container md:w-11/13 mx-auto flex justify-between md:p-3 lg:p-5">
+            <!-- left items -->
+            <div class="flex items-center lg:flex-1">
+                <!-- logo -->
+                <div><img src="./c1-assets/logo-header.png" alt="" class="h-1/2">
+                </div>
+                <!-- text at left -->
+                <div class="hidden sm:block sm:ml-1 md:ml-2 lg:ml-3 xl:ml-4">
+                    <h3 class="md:text-xl lg:text-2xl xl:text-3xl">browse<span class="text-secondary">4</span>Pets</h3>
+                </div>
+            </div>
+            <!-- middle items -->
+            <div class="lg:flex-1 hidden md:block my-auto md:mx-3 lg:mx-12">
+                <ul class="flex justify-between">
+                    <li class="md:p-1">Find a Pet</li>
+                    <li class="md:p-1">Breeds</li>
+                    <li class="md:p-1">Contact Us</li>
+                </ul>
+            </div>
+            <!-- right items -->
+            <div class="lg:flex-1 hidden md:block">
+                <ul class="flex items-center justify-end">
+                    <li class="md:p-1"><i class="fa-solid fa-bell"></i></li>
+                    <li class="md:p-1"><i class="fa-solid fa-magnifying-glass"></i></li>
+                    <li class="md:p-1"><button class="md:px-2 md:py-1 lg:px-4 lg:py-2 border-2 border-secondary rounded-lg">Login</button></li>
+                    <li class="md:p-1"><button class="px-4 py-2 bg-secondary rounded-lg">Register</button></li>
+                </ul>
+            </div>
+              <!-- Hamburger menu -->
+              <div class="absolute right-5 top-3">
+                <div class="md:hidden">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+    </main>
+</body>
+
+</html>
